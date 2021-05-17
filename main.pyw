@@ -80,7 +80,7 @@ if not os.path.exists(homedir + r"/Downloads/Images"):
     os.makedirs(homedir + r"/Downloads/Images")
 
 while True:
-    time.sleep(5)
+    time.sleep(1)
     # Main program.
     try:
         # Moves images.
