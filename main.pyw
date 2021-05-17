@@ -39,13 +39,12 @@ special = (
     ".wsf",
     ".asp", ".aspx", ".cer", ".cfm", ".css", ".htm", ".html", ".jsp", ".part", ".rss", ".xhtml", ".sh", ".swift", ".vb",
     ".bak", ".cab", ".cfg", ".cpl", ".cur", ".dll", ".dmp", ".drv", ".icns", ".ico", ".ini", ".ink", ".msi", ".sys",
-    ".tmp",
     ".EXE", ".PY", ".CSS", ".JAR", ".XML", ".C", ".CGI", ".CLASS", ".CPP", ".CS", ".H", ".JAVA", ".PHP", ".CSV", ".DAT",
     ".DB", ".DBF", ".LOG", ".MDB", ".SAV", ".SQL", ".TAR", ".APK", ".BAT", ".BIN", ".PL", ".COM", ".GADGET", ".MSI",
     ".WSF",
     ".ASP", ".ASPX", ".CER", ".CFM", ".CSS", ".HTM", ".HTML", ".JSP", ".PART", ".RSS", ".XHTML", ".SH", ".SWIFT", ".VB",
     ".BAK", ".CAB", ".CFG", ".CPL", ".CUR", ".DLL", ".DMP", ".DRV", ".ICNS", ".ICO", ".INI", ".INK", ".MSI", ".SYS",
-    ".TMP", ".js", ".JS"
+    ".js", ".JS"
 )
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -120,7 +119,7 @@ while True:
             if os.path.isfile(homedir + r"/Downloads/" + file):
                 if not file.endswith(texts) or not file.endswith(office365) or not file.endswith(
                         special) or not file.endswith(
-                    videos) or not file.endswith(images):
+                    videos) or not file.endswith(images) or not file.endswith(".tmp"):
                     print(homedir + r"/Downloads/" + file)
                     shutil.move(homedir + r"/Downloads/" + file,
                                 homedir + r"/Downloads/Other/" + file)
