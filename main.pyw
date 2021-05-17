@@ -2,7 +2,6 @@ import os
 import shutil
 import getpass
 import time
-import watchdog
 
 # File extension tuples.
 
