@@ -118,8 +118,7 @@ while True:
         for file in os.listdir(homedir + r"/Downloads"):
             if os.path.isfile(homedir + r"/Downloads/" + file):
                 if not file.endswith(texts) or not file.endswith(office365) or not file.endswith(
-                        special) or not file.endswith(
-                    videos) or not file.endswith(images) or not file.endswith(".tmp"):
+                        special) or not file.endswith(videos) or not file.endswith(images):
                     print(homedir + r"/Downloads/" + file)
                     shutil.move(homedir + r"/Downloads/" + file,
                                 homedir + r"/Downloads/Other/" + file)
